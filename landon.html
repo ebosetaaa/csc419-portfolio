@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landon Shopping Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppons', sans-serif;
+            background: #f9f9f9;
+            color: #111;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            background: rgba(0,0,0,0.8);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            z-index: 1000;
+            color: white;
+        }
+
+        header a.logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        header .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        header .nav-links a {
+            color: white;
+            font-weight: 500;
+        }
+
+        .project-hero {
+            padding: 12rem 10%;
+            text-align: center;
+            background: linear-gradient(to right, #ff0000, #ff9a9a);
+            color: white;
+        }
+
+        .project-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-hero p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        .project-content {
+            max-width: 900px;
+            margin: 5rem auto;
+            padding: 0 2rem;
+        }
+
+        .project-section {
+            margin-bottom: 4rem;
+        }
+
+        .project-section h2 {
+            font-size: 2rem;
+            color: #fa0303;
+            margin-bottom: 1rem;
+        }
+
+        .project-section p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .screenshots {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .screenshots img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 1rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 2rem;
+            border-radius: 2rem;
+            border: 2px solid #ff4c4c;
+            color: #ff4c4c;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s ease-in-out;
+        }
+
+        .btn-back:hover {
+            background: #ff4c4c;
+            color: white;
+        }
+
+        @media(max-width:768px){
+            .screenshots {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">Ejola Eboseta</a>
+    <div class="nav-links">
+        <a href="index.html#projects">Back to Portfolio</a>
+    </div>
+</header>
+
+<section class="project-hero">
+    <h1>Landon Shopping Website</h1>
+    <p>A full-featured shopping website built with Java and Spring Boot framework for a seamless online shopping experience.</p>
+</section>
+
+<section class="project-content">
+
+    <div class="project-section">
+        <h2>Problem I Solved</h2>
+        <p>Users needed a responsive and reliable shopping platform that allows them to browse products, make purchases, and manage their orders easily. Existing platforms for this niche were either slow, difficult to navigate, or lacked essential features like cart management and search functionality.</p>
+    </div>
+
+    <div class="project-section">
+        <h2>Features</h2>
+        <ul>
+            <li>Responsive product catalog with search and filters</li>
+            <li>Shopping cart and checkout system</li>
+            <li>User authentication and profile management</li>
+            <li>Order tracking and history</li>
+            <li>Admin panel for product management</li>
+        </ul>
+    </div>
+
+    <div class="project-section">
+        <h2>Technologies Used</h2>
+        <p>Java, Spring Boot, MySQL, Thymeleaf, HTML, CSS, JavaScript</p>
+    </div>
+
+    <div class="project-section">
+        <h2>Screenshots</h2>
+        <div class="screenshots">
+            <img src="IMG_3.png" alt="Landing Page Screenshot">
+        </div>
+    </div>
+
+    <div class="project-section">
+        <h2>What I Learned</h2>
+        <p>Through this project, I gained experience with backend development using Spring Boot, integrating front-end templates with dynamic data, and deploying a full-stack application. I also improved my understanding of user experience design and responsive layouts.</p>
+    </div>
+
+    <a href="index.html#projects" class="btn-back">Back to Portfolio</a>
+
+</section>
+
+</body>
+</html>
